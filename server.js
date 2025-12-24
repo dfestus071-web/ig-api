@@ -26,6 +26,8 @@ app.post('/api/highlights', (req, res) => {
   });
 });
 
-app.listen(10000, () => {
-  console.log('API running');
+const PORT = process.env.PORT || 10000;
+
+app.listen(PORT, () => {
+  console.log(`API running on port ${PORT}`);
 });
